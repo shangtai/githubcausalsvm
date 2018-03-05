@@ -19,7 +19,7 @@ The main file is causalsvm.r and the main function is caulsalsvm_predict() which
 *  the third input, X_train, is the feature matrix for training data set. Each row is a sample and each column represents a feature.
 *  the fourth input, X_test, is the feature matrix for the test data set. Each row is a sample and each column represents a feature. 
 *  the fifth input, rnd_train, is the radon-nikodym derivative for the training data. One possible algorithm to obtain this is unconstrained Least-Squares Importance Fitting (uLSIF) which is included in densratio package in R software.
-*  the sisth input is the kernel used. Examples are included in the example file to illustrate how can one construct the kernel object.
+*  the sixth input is the kernel used. Examples are included in the example file to illustrate how can one construct the kernel object.
 *  the seventh input is gamma. This is a parameter in the causal SVM method which regularize the objective function. 
 caulsalsvm_predict <- function(treatment_vector_train, y_obs_train, X_train, X_test, rnd_train, kernelused, gamma, filename = "", print_option = FALSE){
 
